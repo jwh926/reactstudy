@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div>
 			<h1>Counter: {counter}</h1>
-			<button onClick={onClick}>Click</button>
+			<button onClick={onClick}>클릭하세요</button>
 		</div>
 	)
 }
