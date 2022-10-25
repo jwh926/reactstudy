@@ -1,8 +1,15 @@
-import { useEffect, useState } from "react";
-import Coin from "./coinpaprika/Coin";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./routes/Home";
 
 function App() {
-	return <Coin />;
+	return (
+		<Router>
+			<Routes>
+				<Route path="/" element={<Home/>} />
+				<Route path="/movie" />
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;
